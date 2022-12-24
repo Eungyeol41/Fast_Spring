@@ -20,9 +20,10 @@ dependencies {
     // 인메모리 데이터베이스 방식을 사용하기 위해서 h2database를 사용할 예정
     runtimeOnly 'com.h2database:h2'
 
-
     annotationProcessor("org.projectlombok:lombok")
     compileOnly("org.projectlombok:lombok")
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 test {
